@@ -1,7 +1,7 @@
 const express = require('express')
+require('dotenv').config()
 const app = express()
-app.all('/', (req, res) => {
-    console.log("Just got a request!")
-    res.send('Yo!')
-})
+const router = require('./SattaKing/routes');
+require('./DB');
+app.use(router);
 app.listen(process.env.PORT || 3000)
