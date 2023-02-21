@@ -3,10 +3,12 @@ const router = express.Router();
 const {getDailyResult, setDailyResult} = require('../controllers/DailyResult');
 
 // Home page route.
-router.get("/SattaKing/getDailyResult", getDailyResult);
+router.get("/KalyanKing/getDailyResult", getDailyResult);
 
 
-router.get("/SattaKing/setDailyResult", setDailyResult);
+router.get("/KalyanKing/setDailyResult", setDailyResult);
+
+
 // About page route.
 router.get("/about", function (req, res) {
   res.send("About this wiki");

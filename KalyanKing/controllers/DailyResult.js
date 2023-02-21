@@ -9,11 +9,11 @@ exports.getDailyResult = async(req, res)=>{
 
 exports.setDailyResult=(req, res)=>{
     const daily = new DailyResult({
-        kabharName:"Gali",
+        kabharName:"SRIDEVI MORNING",
         khabarTop:0,
-        khabarTime:'11:15 PM',
-        lastKhabar:'49',
-        todayKhabar:'--'
+        openTime:'09:30 AM',
+        closeTime:'10:30 AM',
+        todayKhabar:'119-13-490'
     });
     daily.save();
     res.send("About this wiki1");
