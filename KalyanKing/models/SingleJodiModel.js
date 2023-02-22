@@ -8,21 +8,18 @@ const dailyResult = new Schema({
     khabarTop: {
       type: Boolean,
     },
-    khabarTime:{
+    openTime:{
       type:String
     },
-    lastKhabar:{
+    closeTime:{
       type:String
     },
     todayKhabar:{
       type:String
-    },
-    detail:{
-      type:String
     }
 });
 
-const SattaKing = mongoose.connection.useDb('SattaKing');
-const DailyResult = SattaKing.model("DailyResult", dailyResult)
+const KalyanKing = mongoose.connection.useDb('KalyanKing');
+const DailyResult = KalyanKing.model("DailyResult", dailyResult)
 
 module.exports = DailyResult;
