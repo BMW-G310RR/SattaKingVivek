@@ -12,7 +12,7 @@ const singleJodi = new Schema({
       type:String
     },
     number:{
-      type:String
+      type:Number
     }
 });
 
