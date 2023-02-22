@@ -1,25 +1,22 @@
 const mongoose = require("mongoose")
 
 const Schema = mongoose.Schema;
-const dailyResult = new Schema({
-    kabharName: {
+const singleJodi = new Schema({
+    newsName: {
       type: String,
     },
-    khabarTop: {
-      type: Boolean,
+    color: {
+      type: String,
     },
-    openTime:{
+    backgroundColor:{
       type:String
     },
-    closeTime:{
-      type:String
-    },
-    todayKhabar:{
+    number:{
       type:String
     }
 });
 
 const KalyanKing = mongoose.connection.useDb('KalyanKing');
-const DailyResult = KalyanKing.model("DailyResult", dailyResult)
+const SingleJodi = KalyanKing.model("SingleJodi", singleJodi)
 
-module.exports = DailyResult;
+module.exports = SingleJodi;

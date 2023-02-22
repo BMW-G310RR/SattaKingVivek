@@ -3,7 +3,7 @@ const LuckyNumber = require('../models/LuckyNumberModel');
 exports.getLuckyNumber = async(req, res)=>{
     const response = await LuckyNumber.find({});
     res.status(200).send({
-        DailyResult:response
+        LuckyNumber:response
     })
 }
 

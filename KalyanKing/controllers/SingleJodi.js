@@ -1,14 +1,14 @@
-const DailyResult = require('../models/DailyResultModel');
+const SingleJodi = require('../models/SingleJodiModel');
 
 exports.getDailyResult = async(req, res)=>{
-    const response = await DailyResult.find({});
+    const response = await SingleJodi.find({});
     res.status(200).send({
         DailyResult:response
     })
 }
 
 exports.setDailyResult=(req, res)=>{
-    const daily = new DailyResult({
+    const daily = new SingleJodi({
         kabharName:"SRIDEVI MORNING",
         khabarTop:0,
         openTime:'09:30 AM',
