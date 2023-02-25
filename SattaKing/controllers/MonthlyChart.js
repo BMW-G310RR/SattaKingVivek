@@ -18,7 +18,7 @@ exports.setMonthlyChart=(req, res)=>{
     let today = new Date();
     let fullDate = today.getDate()+'-'+today.getMonth()+'-'+today.getFullYear();
     const daily = new MonthlyChart({
-        "date": fullDate,
+        "date": fullDate.toString(),
         "game1": "56",
         "game2": "49",
         "game3": "29",
