@@ -3,7 +3,7 @@ const MonthlyChart = require('../models/MonthlyChartModel');
 exports.getMonthlyChart = async(req, res)=>{
     const response = await MonthlyChart.find({});
     res.status(200).send({
-        LuckyNumber:response
+        MonthlyChart:response
     })
 }
 
