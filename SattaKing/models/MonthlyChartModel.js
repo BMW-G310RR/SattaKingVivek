@@ -3,7 +3,7 @@ const mongoose = require("mongoose")
 const Schema = mongoose.Schema;
 const monthlyChart = new Schema({
     date: {
-      type: Date,
+      type: String,
     },
     game1: {
       type: String,
